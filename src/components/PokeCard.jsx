@@ -10,12 +10,14 @@ export const PokeCard = ({ selectedPokemon }) => {
 
         // Chech if the selected pokemon information is available in the cache
         // 1. Define the cache
+        
         let cache = {}
         if (localStorage.getItem('pokedex')) {
             cache = JSON.parse(localStorage.getItem('pokedex'))
         }
 
         // 2. Check if the selected pokemon is in the cache, otherwhise fetch from the API
+        
         if (selectedPokemon in cache) {
             // read from cache
             setData(cache[selectedPokemon])
@@ -25,6 +27,18 @@ export const PokeCard = ({ selectedPokemon }) => {
        
 
         // we passed all the cache stuff to no avail and now need to fetch the data from API
+        
+        async function fetchPokemonData() {
+            setLoading(true)
+            try {
+
+            } catch (err) {
+                console.log(err.message)
+            } finally {
+                setLoading(false)
+            }
+        }
+
 
         
 
