@@ -16,6 +16,11 @@ export const PokeCard = ({ selectedPokemon }) => {
         }
 
         // 2. Check if the selected pokemon is in the cache, otherwhise fetch from the API
+        if (selectedPokemon in cache) {
+            // read from cache
+            setData(cache[selectedPokemon])
+            return
+        }
 
        
 
