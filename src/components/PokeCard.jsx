@@ -31,20 +31,28 @@ export const PokeCard = ({ selectedPokemon }) => {
         async function fetchPokemonData() {
             setLoading(true)
             try {
+                const baseURL = 'https://pokeapi.co/api/v2/'
+                const suffix = 'pokemon/' + selectedPokemon
+                const finalURL = baseURL + suffix
+                const res = await fetch(finalURL)
+                const pokemonData = await res.json()
+                setData(pokemonData)
 
+                cache[selectedPokemon] = pokemonData
+                localStorage.setItem(JSON.stringify(cache))
             } catch (err) {
                 console.log(err.message)
             } finally {
                 setLoading(false)
             }
         }
+    
 
-
-        
+        fetchPokemonData()        
 
 
         // If fetching from the API, make sure to save the info to the cache for next time
-    })
+    }, [loading, selectedPokemon])
 
     return (
         <div></div>
