@@ -1,4 +1,4 @@
-import { first151Pokemon } from "../utils"
+import { first151Pokemon, getFullPokedexNumber } from "../utils"
 
 export const SideNav = () => {
 
@@ -9,8 +9,8 @@ export const SideNav = () => {
       {first151Pokemon.map((pokemon, pokemonIndex) => {
         return(
           <button>
+            <p>{getFullPokedexNumber(pokemonIndex)}</p>
             <p>{pokemon}</p>
-
           </button>
         )
       })}
