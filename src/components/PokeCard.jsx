@@ -1,4 +1,5 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import { getPokedexNumber } from "../utils"
 
 export const PokeCard = ({ selectedPokemon }) => {
     const [data, setData] = useState(null)
@@ -24,22 +25,20 @@ export const PokeCard = ({ selectedPokemon }) => {
             return
         }
 
-       
-
         // we passed all the cache stuff to no avail and now need to fetch the data from API
         
         async function fetchPokemonData() {
             setLoading(true)
             try {
                 const baseURL = 'https://pokeapi.co/api/v2/'
-                const suffix = 'pokemon/' + selectedPokemon
+                const suffix = 'pokemon/' + getPokedexNumber(selectedPokemon)
                 const finalURL = baseURL + suffix
                 const res = await fetch(finalURL)
                 const pokemonData = await res.json()
                 setData(pokemonData)
-
+                console.log(pokemonData)
                 cache[selectedPokemon] = pokemonData
-                localStorage.setItem(JSON.stringify(cache))
+                localStorage.setItem('pokedex', JSON.stringify(cache))
             } catch (err) {
                 console.log(err.message)
             } finally {
@@ -52,7 +51,7 @@ export const PokeCard = ({ selectedPokemon }) => {
 
 
         // If fetching from the API, make sure to save the info to the cache for next time
-    }, [loading, selectedPokemon])
+    }, [selectedPokemon])
 
     return (
         <div></div>
