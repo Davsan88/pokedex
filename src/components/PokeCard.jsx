@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
-import { getPokedexNumber } from "../utils"
+import { getFullPokedexNumber, getPokedexNumber } from "../utils"
 
 export const PokeCard = ({ selectedPokemon }) => {
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(false)
+
+    const { name, height, abilities, stats, types, moves, sprites } = data || {}
+
 
     useEffect(() => {
         // If loading, exit logic
@@ -53,7 +56,20 @@ export const PokeCard = ({ selectedPokemon }) => {
         // If fetching from the API, make sure to save the info to the cache for next time
     }, [selectedPokemon])
 
+    if (loading || !data) {
+        return (
+            <div>
+                <h4>Loading...</h4>
+            </div>
+        )
+    }
+
     return (
-        <div></div>
+        <div className='poke-card'>
+            <div>
+                <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
+                <h2>{name}</h2>
+            </div>
+        </div>
     )
 }
