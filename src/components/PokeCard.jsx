@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { getFullPokedexNumber, getPokedexNumber } from "../utils"
+import TyperCard from "./TyperCard"
 
-export const PokeCard = ({ selectedPokemon }) => {
+const PokeCard = ({ selectedPokemon }) => {
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(false)
 
@@ -70,6 +71,18 @@ export const PokeCard = ({ selectedPokemon }) => {
                 <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
                 <h2>{name}</h2>
             </div>
+            <div className='type-container'>
+                {types.map((typeObj, typeIndex) => {
+                    return (
+                        <TyperCard key={typeIndex} type={typeObj?.type?.name} />
+                    )
+                }
+            )}
+
+            </div>
         </div>
     )
 }
+
+
+export default PokeCard
