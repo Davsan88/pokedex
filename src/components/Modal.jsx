@@ -1,3 +1,7 @@
-export const Modal = () => {
+const Modal = () => {
   return
 }
+
+
+
+export default Modal

@@ -1,6 +1,6 @@
 import { first151Pokemon, getFullPokedexNumber } from "../utils"
 
-export const SideNav = () => {
+const SideNav = () => {
 
 
 
@@ -21,3 +21,6 @@ export const SideNav = () => {
     </nav>
   )
 }
+
+
+export default SideNav
