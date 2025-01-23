@@ -1,6 +1,6 @@
 import { pokemonTypeColors } from "../utils"
 
-const TyperCard = ({ type }) => {
+const TypeCard = ({ type }) => {
   return (
     <div 
       className="type-tile" 
@@ -14,4 +14,4 @@ const TyperCard = ({ type }) => {
 }
 
 
-export default TyperCard
+export default TypeCard
