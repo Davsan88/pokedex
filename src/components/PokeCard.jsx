@@ -8,6 +8,12 @@ const PokeCard = ({ selectedPokemon }) => {
 
     const { name, height, abilities, stats, types, moves, sprites } = data || {}
 
+    const imgList = Object.keys(sprites || {}).filter(value => {
+        if (!sprites[value]) { return false }
+        if (['versions', 'other'].includes(value)) { return false }
+        return true
+    })
+
 
     useEffect(() => {
         // If loading, exit logic
@@ -82,6 +88,7 @@ const PokeCard = ({ selectedPokemon }) => {
                 })}
             </div>
             <img className='default-img' src={'/pokemon/' + getFullPokedexNumber(selectedPokemon) + '.png'} alt={`${name}-large-img`} />
+            <div className='img-container'> </div>
         </div>
     )
 }
