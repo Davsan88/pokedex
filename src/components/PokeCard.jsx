@@ -103,6 +103,18 @@ const PokeCard = ({ selectedPokemon }) => {
                     )
                 })}
             </div>
+            <h3>Stats</h3>
+            <div className="stats-card">
+                {stats.map((statObj, statIndex) => {
+                    const {stat, base_stat } = statObj
+                    return (
+                        <div key={statIndex} className='stat-item'>
+                            <p>{stat?.name.replaceAll('-', ' ')}</p>
+                            <h4>{base_stat}</h4>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }
