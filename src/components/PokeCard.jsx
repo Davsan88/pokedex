@@ -80,25 +80,25 @@ const PokeCard = ({ selectedPokemon }) => {
             <div className='type-container'>
                 {types.map((typeObj, typeIndex) => {
                     return (
-                        <TypeCard 
-                            key={typeIndex} 
+                        <TypeCard
+                            key={typeIndex}
                             type={typeObj?.type?.name}
                         />
                     )
                 })}
             </div>
-            <img 
-                className='default-img' 
-                src={'/pokemon/' + getFullPokedexNumber(selectedPokemon) + '.png'} alt={`${name}-large-img`} 
+            <img
+                className='default-img'
+                src={'/pokemon/' + getFullPokedexNumber(selectedPokemon) + '.png'} alt={`${name}-large-img`}
             />
             <div className='img-container'>
                 {imgList.map((spriteUrl, spriteIndex) => {
                     const imgUrl = sprites[spriteUrl]
-                    return(
-                        <img 
-                            key={spriteIndex} 
-                            src={imgUrl} 
-                            alt={`${name}-img-${spriteUrl}`} 
+                    return (
+                        <img
+                            key={spriteIndex}
+                            src={imgUrl}
+                            alt={`${name}-img-${spriteUrl}`}
                         />
                     )
                 })}
@@ -106,12 +106,22 @@ const PokeCard = ({ selectedPokemon }) => {
             <h3>Stats</h3>
             <div className="stats-card">
                 {stats.map((statObj, statIndex) => {
-                    const {stat, base_stat } = statObj
+                    const { stat, base_stat } = statObj
                     return (
                         <div key={statIndex} className='stat-item'>
                             <p>{stat?.name.replaceAll('-', ' ')}</p>
                             <h4>{base_stat}</h4>
                         </div>
+                    )
+                })}
+            </div>
+            <h3>Moves</h3>
+            <div className='pokemon-move-grid'>
+                {moves.map((moveObj, moveIndex) => {
+                    return (
+                        <button className='button-card pokemon-move' key={moveIndex} onClick={() => { }}>
+                            <p>{moveObj?.move?.name.replaceAll('-', ' ')}</p>
+                        </button>
                     )
                 })}
             </div>
