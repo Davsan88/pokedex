@@ -6,6 +6,7 @@ import Modal from "./Modal"
 const PokeCard = ({ selectedPokemon }) => {
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(false)
+    const [skill, setSkill] = useState(null)
 
     const { name, height, abilities, stats, types, moves, sprites } = data || {}
 
@@ -74,16 +75,17 @@ const PokeCard = ({ selectedPokemon }) => {
 
     return (
         <div className='poke-card'>
-            <Modal handleCloseModal={() => { }}>
-                <div>
-                    <h6>Name</h6>
-                    <h2></h2>
-                </div>
-                <div>
-                    <h6>Description</h6>
-                    <p>Hello there</p>
-                </div>
-            </Modal>
+            {skill && (
+                <Modal handleCloseModal={() => { setSkill(null) }}>
+                    <div>
+                        <h6>Name</h6>
+                        <h2></h2>
+                    </div>
+                    <div>
+                        <h6>Description</h6>
+                        <p>Hello there</p>
+                    </div>
+                </Modal>)}
             <div>
                 <h4>#{getFullPokedexNumber(selectedPokemon)}</h4>
                 <h2>{name}</h2>
