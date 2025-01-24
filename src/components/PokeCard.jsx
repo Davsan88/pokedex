@@ -18,7 +18,13 @@ const PokeCard = ({ selectedPokemon }) => {
     })
 
     async function fetchMoveData(move, moveUrl) {
+        if (loadingSkill || !localStorage || !moveUrl ) { return }
 
+        // check cache for move
+        let skillCache = {}
+        if (localStorage.getItem('pokemon-moves')) {
+            skillCache = JSON.parse(localStorage.getItem('pokemon-moves'))
+        }
     }
 
 
