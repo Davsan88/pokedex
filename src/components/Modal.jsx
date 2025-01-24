@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 
-const Modal = () => {
+const Modal = ({children, handleCloseModal}) => {
   return ReactDOM.createPortal(
     <div className='modal-container'>
       <button onClick={handleCloseModal} className='modal-underlay'/>
