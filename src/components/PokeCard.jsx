@@ -7,6 +7,7 @@ const PokeCard = ({ selectedPokemon }) => {
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(false)
     const [skill, setSkill] = useState(null)
+    const [loadingSkill, setLoadingSkill] = useState(false)
 
     const { name, height, abilities, stats, types, moves, sprites } = data || {}
 
@@ -15,6 +16,10 @@ const PokeCard = ({ selectedPokemon }) => {
         if (['versions', 'other'].includes(value)) { return false }
         return true
     })
+
+    async function fetchMoveData(move, moveUrl) {
+
+    }
 
 
     useEffect(() => {
