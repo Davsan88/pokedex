@@ -32,6 +32,7 @@ const PokeCard = ({ selectedPokemon }) => {
             return
         }
 
+
         
     }
 
@@ -53,6 +54,7 @@ const PokeCard = ({ selectedPokemon }) => {
         if (selectedPokemon in cache) {
             // read from cache
             setData(cache[selectedPokemon])
+            console.log('Found pokemon in cache')
             return
         }
 
@@ -67,7 +69,7 @@ const PokeCard = ({ selectedPokemon }) => {
                 const res = await fetch(finalURL)
                 const pokemonData = await res.json()
                 setData(pokemonData)
-                console.log(pokemonData)
+                console.log('Fetched pokemon data')
                 cache[selectedPokemon] = pokemonData
                 localStorage.setItem('pokedex', JSON.stringify(cache))
             } catch (err) {
