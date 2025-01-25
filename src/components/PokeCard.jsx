@@ -25,6 +25,14 @@ const PokeCard = ({ selectedPokemon }) => {
         if (localStorage.getItem('pokemon-moves')) {
             skillCache = JSON.parse(localStorage.getItem('pokemon-moves'))
         }
+
+        if (move in skillCache) {
+            setSkill(skillCache[move])
+            console.log('Found move in cache')
+            return
+        }
+
+        
     }
 
 
