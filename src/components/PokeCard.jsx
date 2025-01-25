@@ -32,8 +32,23 @@ const PokeCard = ({ selectedPokemon }) => {
             return
         }
 
-
-        
+        try {
+            setLoadingSkill(true)
+            const res = fetch(moveUrl)
+            const moveData = res.json()
+            console.log('Fetched move from API')
+            const description = moveData?.flavor_text_entries.filter(
+                val => {
+                    return val.version_group.name = 'fiered-leafgreen'
+                })[0]?.flavor_text
+            
+           
+            
+        } catch (err) {
+            console.log(err)
+        } finally {
+            setLoadingSkill(false)
+        }        
     }
 
 
