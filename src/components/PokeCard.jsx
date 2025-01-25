@@ -42,7 +42,13 @@ const PokeCard = ({ selectedPokemon }) => {
                     return val.version_group.name = 'fiered-leafgreen'
                 })[0]?.flavor_text
             
-           
+            const skillData = {
+                name: move,
+                description
+            }
+            setSkill(skillData)
+            skillCache[move] = skillData
+            localStorage.setItem('pokemon-moves', JSON.stringify(skillCache))
             
         } catch (err) {
             console.log(err)
