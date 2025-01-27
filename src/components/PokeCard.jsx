@@ -174,7 +174,9 @@ const PokeCard = ({ selectedPokemon }) => {
             <div className='pokemon-move-grid'>
                 {moves.map((moveObj, moveIndex) => {
                     return (
-                        <button className='button-card pokemon-move' key={moveIndex} onClick={() => { }}>
+                        <button className='button-card pokemon-move' key={moveIndex} onClick={() => {
+                            fetchMoveData(moveObj?.move?.name, moveObj?.move?.url)
+                         }}>
                             <p>{moveObj?.move?.name.replaceAll('-', ' ')}</p>
                         </button>
                     )
