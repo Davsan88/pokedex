@@ -121,11 +121,11 @@ const PokeCard = ({ selectedPokemon }) => {
                 <Modal handleCloseModal={() => { setSkill(null) }}>
                     <div>
                         <h6>Name</h6>
-                        <h2></h2>
+                        <h2 className='skill-name'>{skill.name.replaceAll('-', ' ')}</h2>
                     </div>
                     <div>
                         <h6>Description</h6>
-                        <p>Hello there</p>
+                        <p>{skill.description}</p>
                     </div>
                 </Modal>)}
             <div>
