@@ -1,8 +1,9 @@
 import { first151Pokemon, getFullPokedexNumber } from "../utils"
+import { useState } from "react"
 
-const SideNav = () => {
-
-
+const SideNav = ({ selectedPokemon, setSelectedPokemon }) => {
+  const [searchValue, setSearchValue] = useState('')
+ 
 
   return (
     <nav>
@@ -12,7 +13,11 @@ const SideNav = () => {
       </div>
       {first151Pokemon.map((pokemon, pokemonIndex) => {
         return(
-          <button key={pokemonIndex} className={'nav-card'}>
+          <button 
+            onClick={() => {setSelectedPokemon(pokemonIndex)}}
+            key={pokemonIndex} 
+            className={'nav-card' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ' ')}
+          >
             <p>{getFullPokedexNumber(pokemonIndex)}</p>
             <p>{pokemon}</p>
           </button>
