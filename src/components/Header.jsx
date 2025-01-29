@@ -1,6 +1,10 @@
 const Header = () => {
   return (
-    <header></header>
+    <header>
+      <button className="open-nav-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
   )
 }
 
