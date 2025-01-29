@@ -31,7 +31,7 @@ const SideNav = ({ selectedPokemon, setSelectedPokemon }) => {
           <button 
             onClick={() => {setSelectedPokemon(truePokedexNumber)}}
             key={pokemonIndex} 
-            className={'nav-card' + (pokemonIndex === selectedPokemon ? 'nav-card-selected' : ' ')}
+            className={'nav-card' + (truePokedexNumber === selectedPokemon ? 'nav-card-selected' : ' ')}
           >
             <p>{getFullPokedexNumber(truePokedexNumber)}</p>
             <p>{pokemon}</p>
