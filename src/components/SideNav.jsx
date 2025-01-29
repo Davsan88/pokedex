@@ -6,9 +6,13 @@ const SideNav = ({ selectedPokemon, setSelectedPokemon }) => {
  
   const filteredPokemon = first151Pokemon.filter((element, elementIndex) => {
     // if full pokedex number includes the current search value, return true
+    if (toString(getFullPokedexNumber(elementIndex)).includes(searchValue)) { return true }
     
     // if full pokedex name includes the current search value, return true
+    if (element.toLowerCase().includes(searchValue.toLowerCase())) { return true }
+
     // otherwise, exclude value from array
+    return false
   })
 
   return (
@@ -20,7 +24,7 @@ const SideNav = ({ selectedPokemon, setSelectedPokemon }) => {
           onChange={(e) => {setSearchValue(e.target.value)}} 
         />
       </div>
-      {first151Pokemon.map((pokemon, pokemonIndex) => {
+      {filteredPokemon.map((pokemon, pokemonIndex) => {
         return(
           <button 
             onClick={() => {setSelectedPokemon(pokemonIndex)}}
