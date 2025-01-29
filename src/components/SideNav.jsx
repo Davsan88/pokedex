@@ -9,7 +9,10 @@ const SideNav = ({ selectedPokemon, setSelectedPokemon }) => {
     <nav>
       <div  className={'header'}>
         <h1 className="text-gradient">Pokédex</h1>
-        <input />
+        <input 
+          input={searchValue}
+          onChange={(e) => {setSearchValue(e.target.value)}} 
+        />
       </div>
       {first151Pokemon.map((pokemon, pokemonIndex) => {
         return(
