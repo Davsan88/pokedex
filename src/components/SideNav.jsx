@@ -4,6 +4,12 @@ import { useState } from "react"
 const SideNav = ({ selectedPokemon, setSelectedPokemon }) => {
   const [searchValue, setSearchValue] = useState('')
  
+  const filteredPokemon = first151Pokemon.filter((element, elementIndex) => {
+    // if full pokedex number includes the current search value, return true
+    
+    // if full pokedex name includes the current search value, return true
+    // otherwise, exclude value from array
+  })
 
   return (
     <nav>
