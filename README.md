@@ -26,3 +26,22 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 - **Version Control**: GitHub
 
 ---
+
+
+## 🔄 **Workflow Guide: Building the React Pokédex**
+
+---
+
+### **1. Project Setup**
+- **Action:**
+    - Initialized a new **React project using Vite**.
+    - Set up a **GitHub repository** and connected it with **GitHub Desktop** for version control.
+    - Organized the project structure with **folders** for components and utilities.
+
+- **Purpose:**
+    - Establish a **solid foundation** for the project with **proper version control** and **organized file structure**.
+
+---
+
+
+
