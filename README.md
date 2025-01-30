@@ -282,5 +282,14 @@ git push origin main
     - Netlify will provide a **default subdomain** (e.g., `react-pokedex.netlify.app`).  
     - You can **customize this later** if you wish.
 
+2. **Test Functionality:**
+
+    - **Browse through Pokémon**, search for **specific ones**, and view **detailed information** to ensure everything works **as expected**.
+
+3. **Check Netlify Logs:**
+
+    - Navigate to your **Netlify dashboard**.
+    - Check the **"Deploys"** section for any **build or runtime errors**.
+    - Address any issues if necessary.
 
 ---
