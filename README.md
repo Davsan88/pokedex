@@ -15,3 +15,14 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 - **Responsive Design**: Enjoy a smooth experience on both **mobile and desktop** devices.
 
 ---
+
+
+## 🛠️ **Technologies Used**
+
+- **Frontend**: React, JavaScript, CSS
+- **State Management**: React Hooks (`useState`, `useEffect`)
+- **API Integration**: PokéAPI
+- **Deployment**: Netlify
+- **Version Control**: GitHub
+
+---
