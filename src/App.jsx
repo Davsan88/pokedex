@@ -9,7 +9,11 @@ function App() {
   const [showSideMenu, setShowSideMenu] = useState(false)
 
   function handleToggleMenu() {
-    setShowSideMenu(!showSideMenu)
+    setShowSideMenu((prev) => !prev)
+  }
+
+  function handleCloseMenu() {
+    setShowSideMenu(false)
   }
 
   return (
@@ -20,7 +24,7 @@ function App() {
       <SideNav 
         selectedPokemon={selectedPokemon} 
         setSelectedPokemon={setSelectedPokemon}
-        handleToggleMenu={handleToggleMenu}
+        handleCloseMenu={handleCloseMenu}
         showSideMenu={showSideMenu}
       />
       <PokeCard 
