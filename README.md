@@ -60,3 +60,16 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
     - Provide an **intuitive** and **visually appealing** interface for users to interact with the **Pokédex**.
 
 ---
+
+
+### **3. Fetching Pokémon Data**
+
+- **Action:**
+    - Utilized React’s **`useEffect`** to fetch data from the **PokéAPI**.
+    - Stored the fetched data in **state variables** using **`useState`**.
+    - Implemented **caching with `localStorage`** to reduce redundant API calls.
+
+- **Purpose:**
+    - Efficiently retrieve and **manage Pokémon data**, ensuring a **smooth user experience**.
+
+---
