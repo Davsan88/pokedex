@@ -16,12 +16,12 @@ const SideNav = ({ selectedPokemon, setSelectedPokemon, handleToggleMenu, showSi
   })
 
   return (
-    <nav>
-      <div  className={'header'}>
-        <h1 className="text-gradient">Pokédex</h1>
+    <nav className={`${!showSideMenu ? "open" : ""}`}>  
+      <div  className={`header ${!showSideMenu ? "open" : ""}`}>
         <button className="open-nav-button">
           <i className="fa-solid fa-arrow-left-long"></i>
         </button>
+        <h1 className="text-gradient">Pokédex</h1>
       </div>
         <input 
           placeholder="E.g. 001 or Bulba..."
