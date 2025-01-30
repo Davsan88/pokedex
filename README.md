@@ -245,10 +245,19 @@ npm run dev
 
 1. **Push Your Code to GitHub:**
 
-- Use **GitHub Desktop** or the **command line** to commit and push your latest changes.
+    - Use **GitHub Desktop** or the **command line** to commit and push your latest changes.
 
 ```bash
 git add .
 git commit -m "Initial commit"
 git push origin main
 ```
+
+2. **Link GitHub to Netlify:**
+
+    - Log in to your **Netlify account**.
+    - Click on **"New site from Git"** and select **GitHub** as the provider.
+    - Authorize **Netlify** to access your **GitHub repositories**.
+    - Select the **`react-pokedex`** repository.
+
+
