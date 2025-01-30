@@ -213,7 +213,7 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
-### **Installation**
+## **Installation**
 
 1. **Clone the Repository:**
 
@@ -239,3 +239,16 @@ npm run dev
 ---
 
 
+## 🌐 **Deployment**
+
+### **Deploy to Netlify**
+
+1. **Push Your Code to GitHub:**
+
+- Use **GitHub Desktop** or the **command line** to commit and push your latest changes.
+
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
