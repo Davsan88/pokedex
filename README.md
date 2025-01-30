@@ -211,3 +211,20 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 - **Version Control**: Managing **code changes** and **collaboration** using **GitHub**.
 
 ---
+
+
+### **Installation**
+
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/yourusername/react-pokedex.git
+cd react-pokedex
+```
+
+2. **Install Dependencies:**
+
+```bash
+npm install
+```
+
