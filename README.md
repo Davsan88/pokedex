@@ -323,3 +323,17 @@ git push origin main
 This project is based on the [React Pokédex tutorial by smoljames](https://github.com/jamezmca) and is intended for personal learning and educational purposes only. Please refer to [smoljames](http://smoljames.com/) for the original project and licensing information. **Do not copy or distribute this project without permission.**
 
 
+## 🙌 **Acknowledgments**
+
+---
+
+- **smoljames**: For the awesome tutorial that guided me through **building this app** and creating **custom styles**.
+- **PokéAPI**: For providing a **comprehensive API** to fetch Pokémon data.
+- **Netlify**: For making **deployment a breeze**.
+
+---
+
+
+### 📫 **Get in Touch**
+
+Have questions or just want to say hi? Drop me an email at `david.sanchez.martinez@outlook.com`.
