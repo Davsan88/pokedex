@@ -144,3 +144,17 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
+### **3. `PokeCard.jsx`**
+
+**What It Does:**
+- Displays **detailed Pokémon information**, including **stats, types, and moves**.
+
+
+**Actions & Purpose:**
+- **Fetch Pokémon Data**: Retrieves data from the **PokéAPI** and caches it.
+- **Display Stats & Types**: Shows the **Pokémon's stats and types**.
+- **Show Moves**: Lists **available moves** and integrates with the **modal**.
+
+---
+
+
