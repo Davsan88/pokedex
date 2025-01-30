@@ -21,6 +21,7 @@ function App() {
         selectedPokemon={selectedPokemon} 
         setSelectedPokemon={setSelectedPokemon}
         handleToggleMenu={handleToggleMenu}
+        showSideMenu={showSideMenu}
       />
       <PokeCard 
         selectedPokemon={selectedPokemon}
