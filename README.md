@@ -177,3 +177,37 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 - **Close Modal**: Allows users to **close the modal** and return to the **main interface**.
 
 ---
+
+
+## 🎨 **Usage**
+
+---
+
+### **Browse Pokémon**
+- Use the **sidebar** to browse through the first **150 Pokémon** by **name** or **Pokédex number**.
+
+### **Search Pokémon**
+- Use the **search bar** in the sidebar to quickly find a **specific Pokémon**.
+
+### **View Details**
+- Click on a Pokémon to view **detailed information**, including **stats, types, and moves**.
+
+### **Explore Moves**
+- Click on any **move** to see its **description in a modal window**.
+
+---
+
+
+## 💡 **Skills Learned**
+
+- **React State Management**: Using `useState` and `useEffect` to manage dynamic data and side effects.
+- **API Integration**: Fetching data from external APIs and handling responses.
+- **Component Architecture**: Breaking down the app into **reusable and manageable components**.
+- **Responsive Design**: Implementing **responsive layouts** with **CSS** to ensure the app looks good on **all devices**.
+- **Local Storage Caching**: Using `localStorage` to cache API responses and **reduce redundant network requests**.
+- **Modal Implementation**: Creating **modals using React Portals** for displaying **additional information**.
+- **Search Functionality**: Implementing **search and filter features** to enhance **user experience**.
+- **Deployment**: Deploying **React applications** using **Netlify** for seamless hosting and **continuous deployment**.
+- **Version Control**: Managing **code changes** and **collaboration** using **GitHub**.
+
+---
