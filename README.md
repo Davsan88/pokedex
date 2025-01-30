@@ -101,3 +101,19 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
     - Enhance the **user interface** for an **engaging** and **accessible experience** across all devices.
 
 ---
+
+
+### **6. Testing and Deployment**
+
+- **Action:**
+    - Tested the app locally using **Netlify CLI (`netlify dev`)**.
+    - Connected the **GitHub repository to Netlify** for **continuous deployment**.
+    - Deployed the app and verified its functionality on the **live site**.
+
+- **Purpose:**
+    - Ensure the app is **reliable** and **accessible** to users by deploying it to a **live environment**.
+
+---
+
+
+
