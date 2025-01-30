@@ -135,7 +135,6 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 **What It Does:**
 - Provides a sidebar for **browsing and searching** through the first **150 Pokémon**.
 
-
 **Actions & Purpose:**
 - **Search Pokémon**: Users can search for Pokémon by **name** or **Pokédex number**.
 - **Select Pokémon**: Clicking on a Pokémon updates the main display to show **detailed information**.
@@ -149,11 +148,21 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 **What It Does:**
 - Displays **detailed Pokémon information**, including **stats, types, and moves**.
 
-
 **Actions & Purpose:**
 - **Fetch Pokémon Data**: Retrieves data from the **PokéAPI** and caches it.
 - **Display Stats & Types**: Shows the **Pokémon's stats and types**.
 - **Show Moves**: Lists **available moves** and integrates with the **modal**.
+
+---
+
+
+### **4. `TypeCard.jsx`**
+
+**What It Does:**
+- Displays **Pokémon type** with **corresponding colors**.
+
+**Actions & Purpose:**
+- **Visual Representation**: Each type is **color-coded** to match **Pokémon aesthetics**.
 
 ---
 
