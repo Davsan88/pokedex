@@ -267,6 +267,11 @@ git push origin main
  - **Publish Directory**: `dist`
  - **Environment Variables**: Add any **necessary environment variables** if applicable.
 
+4. **Deploy:**
 
+ - Click **"Deploy site"** and wait for **Netlify** to build and deploy your app.
+ - Once done, you'll get a **live URL** to share with friends and family!
 
 ---
+
+
