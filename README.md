@@ -73,3 +73,20 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
     - Efficiently retrieve and **manage Pokémon data**, ensuring a **smooth user experience**.
 
 ---
+
+
+### **4. Implementing Components**
+
+- **Action:**
+    - **`Header.jsx`**: Created a **header** with a **toggle button** for the sidebar.
+    - **`SideNav.jsx`**: Developed a **sidebar** for browsing and searching Pokémon.
+    - **`PokeCard.jsx`**: Displayed **detailed Pokémon information**.
+    - **`TypeCard.jsx`**: Showcased **Pokémon types with corresponding colors**.
+    - **`Modal.jsx`**: Implemented a **modal** to show **move details**.
+
+- **Purpose:**
+    - **Break down** the app into **reusable and manageable components** for **better code organization** and **maintenance**.
+
+---
+
+
