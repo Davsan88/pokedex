@@ -228,3 +228,14 @@ cd react-pokedex
 npm install
 ```
 
+3. **Run the App Locally:**
+
+```bash
+npm run dev
+```
+
+- Open your browser and go to **`http://localhost:3000`** (or the port specified) to see the app in action.
+
+---
+
+
