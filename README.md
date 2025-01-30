@@ -90,3 +90,14 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
+### **5. Styling and Responsive Design**
+
+- **Action:**
+    - Styled components using **CSS** to ensure a **clean and modern look**.
+    - Used **flexbox** and **grid layouts** for **responsive design**.
+    - Applied **color coding** based on **Pokémon types** for visual distinction.
+
+- **Purpose:**
+    - Enhance the **user interface** for an **engaging** and **accessible experience** across all devices.
+
+---
