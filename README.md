@@ -293,3 +293,24 @@ git push origin main
     - Address any issues if necessary.
 
 ---
+
+
+## 🎨 **Usage**
+
+### **Browse Pokémon**
+
+    - Use the **sidebar** to browse through the **first 150 Pokémon** by **name** or **Pokédex number**.
+
+### **Search Pokémon**
+
+    - Use the **search bar** in the sidebar to **quickly find a specific Pokémon**.
+
+### **View Details**
+
+    - Click on a **Pokémon** to view **detailed information**, including **stats, types, and moves**.
+
+### **Explore Moves**
+
+    - Click on any **move** to see a **description in a modal window**.
+
+---
