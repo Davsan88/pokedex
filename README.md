@@ -116,4 +116,18 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
+## 🧩 **Main Components**
+
+### **1. `Header.jsx`**
+
+**What It Does:**
+- Displays the app's header with a button to toggle the **sidebar navigation**.
+
+**Actions & Purpose:**
+- **Toggle Sidebar**: The button allows users to open or close the sidebar for **browsing Pokémon**.
+- **Display Title**: Shows the `"Pokédex"` title with a **gradient text effect**.
+
+---
+
+
 
