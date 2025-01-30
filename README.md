@@ -275,3 +275,12 @@ git push origin main
 ---
 
 
+### **Verify Deployment**
+
+1. **Access Your Live Site:**
+
+    - Netlify will provide a **default subdomain** (e.g., `react-pokedex.netlify.app`).  
+    - You can **customize this later** if you wish.
+
+
+---
