@@ -167,3 +167,13 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
+### **5. `Modal.jsx`**
+
+**What It Does:**
+- Creates a **modal** to display **move details**.
+
+**Actions & Purpose:**
+- **Display Move Details**: Shows the **name** and **description** of a Pokémon’s move.
+- **Close Modal**: Allows users to **close the modal** and return to the **main interface**.
+
+---
