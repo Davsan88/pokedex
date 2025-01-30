@@ -261,3 +261,12 @@ git push origin main
     - Select the **`react-pokedex`** repository.
 
 
+3. **Set Up Build Settings:**
+
+ - **Build Command**: `npm run build`
+ - **Publish Directory**: `dist`
+ - **Environment Variables**: Add any **necessary environment variables** if applicable.
+
+
+
+---
