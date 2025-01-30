@@ -44,4 +44,19 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
+### **2. Designing the User Interface**
 
+- **Action:**
+    - Created React components:  
+        - `Header.jsx`
+        - `SideNav.jsx`
+        - `PokeCard.jsx`
+        - `TypeCard.jsx`
+        - `Modal.jsx`
+    - Implemented a **responsive layout** using **CSS** to ensure the app looks good on **all devices**.
+    - Developed a **sidebar navigation** for browsing Pokémon and a **main area** to display Pokémon details.
+
+- **Purpose:**
+    - Provide an **intuitive** and **visually appealing** interface for users to interact with the **Pokédex**.
+
+---
