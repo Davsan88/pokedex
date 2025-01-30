@@ -314,3 +314,12 @@ git push origin main
     - Click on any **move** to see a **description in a modal window**.
 
 ---
+
+
+### **License**
+
+## 📄 License
+
+This project is based on the [React Pokédex tutorial by smoljames](https://github.com/jamezmca) and is intended for personal learning and educational purposes only. Please refer to [smoljames](http://smoljames.com/) for the original project and licensing information. **Do not copy or distribute this project without permission.**
+
+
