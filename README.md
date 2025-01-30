@@ -130,4 +130,17 @@ Welcome to my **React Pokédex!** This project was built as part of my learning 
 ---
 
 
+### **2. `SideNav.jsx`**
+
+**What It Does:**
+- Provides a sidebar for **browsing and searching** through the first **150 Pokémon**.
+
+
+**Actions & Purpose:**
+- **Search Pokémon**: Users can search for Pokémon by **name** or **Pokédex number**.
+- **Select Pokémon**: Clicking on a Pokémon updates the main display to show **detailed information**.
+- **Toggle Visibility**: The sidebar can be **opened** or **closed** for **better user experience**.
+
+---
+
 
